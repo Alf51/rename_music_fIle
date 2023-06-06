@@ -2,8 +2,8 @@ import java.io.File;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Main {
-    static String TARGET_FILE_DIR = "C:\\Project\\renameMusicFIle\\rename_music_fIle\\testFile\\old\\";
-    static String NEW_FILE_PATH_DIR = "C:\\Project\\renameMusicFIle\\rename_music_fIle\\testFile\\RENAME\\";
+    static String TARGET_FILE_DIR = "src\\testFile\\old\\";
+    static String NEW_FILE_PATH_DIR = "src\\testFile\\RENAME\\";
 
     public static void main(String[] args) {
         File file = new File(TARGET_FILE_DIR);
@@ -21,7 +21,7 @@ public class Main {
                 System.out.println("Failed to rename file");
 
             }
-            System.out.println("Renamed " + successfullyRenameCount + " out of " + fileList.length);
         }
+        System.out.println("Renamed " + successfullyRenameCount + " out of " + fileList.length);
     }
 }
